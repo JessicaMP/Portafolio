@@ -1,0 +1,2 @@
+//Materialize
+$(".button-collapse").sideNav();
