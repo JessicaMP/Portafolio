@@ -1,56 +1,9 @@
-* {
-  /*font-family: Neato Serif Italic;*/
-}
-
 .name {
   height: 300px;
   position: absolute;
   margin-left: 20px;
 }
-/*.hola {
-  height: 300px;
-  position: absolute;
-}
-.p1 {
-  background: linear-gradient(#000000, #e5008d, #ff070b);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 100px;
-  width: 200px;
-  display: inline-block;
-  margin-right: 20px;
-}
 
-.p2 {
-  background: linear-gradient(#30e8bf, #ff8235);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 100px;
-  width: 200px;
-  display: inline-block;
-  margin-right: 20px;
-  font-weight: bold;
-}
-
-.p3 {
-  background: linear-gradient(#ff512f, #dd2476);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 100px;
-  width: 200px;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.p4 {
-  background: linear-gradient(#c04848, #480048);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 100px;
-  width: 200px;
-  display: inline-block;
-  margin-right: 20px;
-}*/
 span {
   background-image: -webkit-linear-gradient(#000000, #e5008d, #ff070b);  /* Chrome 10-25, Safari 5.1-6 */
   /*#000000, #e5008d, #ff070b
@@ -97,29 +50,29 @@ span:nth-of-type(1) {
 /*E*/
 span:nth-of-type(2) {
   position: relative;
-  bottom: 310px;
-  left: 130px;
+  bottom: 280px;
+  left: 125px;
 }
 
 /*S*/
 span:nth-of-type(3) {
   position: relative;
-  bottom: 540px;
-  left: 220px;
+  bottom: 610px;
+  left: 400px;
 }
 
 /*S*/
 span:nth-of-type(4) {
   position: relative;
-  bottom: 800px;
-  left: 60px;
+  bottom: 905px;
+  left: 225px;
 }
 
 /*I*/
 span:nth-of-type(5) {
   position: relative;
-  bottom: 1040px;
-  left: 150px;
+  bottom: 1175px;
+  left: 310px;
 }
 
 #particle-canvas {
@@ -164,6 +117,27 @@ span:nth-of-type(5) {
 .nav-style {
   position: absolute;
   transform-origin: top left;
-    transform: rotate(-90deg) translate3d(-100%,0,0);
+  transform: rotate(-90deg) translate3d(-100%,0,0);
   width: 635px;
+}
+
+#home ul:not(.browser-default)>li {
+  width: 20%;
+  text-align: center;
+}
+
+#home ul:not(.browser-default) {
+  width: 100%;
+}
+
+#home nav ul a:hover {
+  background-image: -webkit-linear-gradient(#000000, #e5008d, #ff070b);  /* Chrome 10-25, Safari 5.1-6 */;
+}
+
+.logo {
+  width: 40px;
+}
+
+#sobreMi {
+  padding: 9rem 0;
 }
