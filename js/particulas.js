@@ -9,7 +9,7 @@ particlesJS('particle-canvas', {
     nb: 130,
     line_linked: {
       enable_auto: true,
-      distance: 100,
+      distance: 150,
       color: '#fe9',
       opacity: 1,
       width: 0.7,

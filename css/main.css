@@ -1,3 +1,4 @@
+/*lyrics Jessica Manturano*/
 @font-face {
   font-family: "ZELDA";
   font-style: normal;
@@ -5,24 +6,31 @@
   src: url("../assets/fonts/zelda/ZELDA-Free.woff");
 }
 
+/*subtitulos*/
+@font-face {
+  font-family: "Barrow2";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/barrow/Barrow2Bold.woff");
+}
+
 h1 {
   font-family: "ZELDA";
   position: absolute;
-  font-size: 8rem;
-  top: 4rem;
+  font-size: 6rem;
+  left: 16rem;
+  top: 14rem;
   color: #c05;
-  text-shadow: 4px 3px #078;
+  text-shadow: 4px 3px black;
 }
 
-
 .description {
+  font-family: "Barrow2";
   position: absolute;
   color: #fe9;
   text-align: center;
   top: 23rem;
-  margin-right: 30px;
-  line-height: 25px;
-  font-size: 16px;
+  font-size: 1.5rem;
   letter-spacing: 1.5px;
   z-index: 1;
 }
@@ -60,7 +68,6 @@ h1 {
   margin-bottom: 0;
 }
 
-
 .nav-style {
   position: absolute;
   transform-origin: top left;
@@ -95,6 +102,8 @@ h1 {
 
 #home nav a {
   color: #fe9;
+  font-family: "Barrow2";
+  font-size: 1.3rem;
 }
 
 #sobreMi {
@@ -229,4 +238,9 @@ svg path {
 @keyframes checkDisplay {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+/*Fin de hover button*/
+
+.pin {
+  width: 30%;
 }
