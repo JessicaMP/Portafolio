@@ -1,18 +1,18 @@
 /* config dom id (optional) + config particles params */
 particlesJS('particle-canvas', {
   particles: {
-    color: '#e19',
+    color: '#f68',
     shape: 'circle', // "circle", "edge" or "triangle"
     opacity: 1,
     size: 3.5,
     size_random: true,
-    nb: 100,
+    nb: 130,
     line_linked: {
       enable_auto: true,
       distance: 100,
-      color: '#fff',
+      color: '#fe9',
       opacity: 1,
-      width: 1,
+      width: 0.7,
       condensed_mode: {
         enable: false,
         rotateX: 600,
@@ -38,7 +38,7 @@ particlesJS('particle-canvas', {
       onclick: {
         enable: true,
         mode: 'push', // "push" or "remove" (particles)
-        nb: 2
+        nb: 3
       }
     }
   },

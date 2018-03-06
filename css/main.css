@@ -1,78 +1,37 @@
-.name {
-  height: 300px;
-  position: absolute;
-  margin-left: 20px;
-}
-
-span {
-  background-image: -webkit-linear-gradient(#000000, #e5008d, #ff070b);  /* Chrome 10-25, Safari 5.1-6 */
-  /*#000000, #e5008d, #ff070b
-    #ee0979, #ff6a00
-    #ff512f, #dd2476
-    #c04848, #480048
-  */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 200px;
-  font-family: Neato Serif Regular;
-  font-weight: 100;
-  position: relative;
-}
-
-span::after {
-  content: attr(data-text);
-  left: 7px;
-  position: absolute;
-  text-shadow: 1px 1px black;
-  top: -13px;
-  z-index: -1;
-}
-
 @font-face {
-  font-family: "Neato Serif Regular";
+  font-family: "ZELDA";
   font-style: normal;
   font-weight: normal;
-  src: url("../assets/fonts/neato_serif_fonts/NeatoSerif-Regular.woff");
+  src: url("../assets/fonts/zelda/ZELDA-Free.woff");
 }
 
-@font-face {
-  font-family: "Neato Serif Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/neato_serif_fonts/NeatoSerif-Italic.woff");
-}
-/*J*/
-span:nth-of-type(1) {
-  position: relative;
-  font-size: 280px;
+h1 {
+  font-family: "ZELDA";
+  position: absolute;
+  font-size: 8rem;
+  top: 4rem;
+  color: #c05;
+  text-shadow: 4px 3px #078;
 }
 
-/*E*/
-span:nth-of-type(2) {
-  position: relative;
-  bottom: 280px;
-  left: 125px;
+
+.description {
+  position: absolute;
+  color: #fe9;
+  text-align: center;
+  top: 23rem;
+  margin-right: 30px;
+  line-height: 25px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  z-index: 1;
 }
 
-/*S*/
-span:nth-of-type(3) {
-  position: relative;
-  bottom: 610px;
-  left: 400px;
-}
-
-/*S*/
-span:nth-of-type(4) {
-  position: relative;
-  bottom: 905px;
-  left: 225px;
-}
-
-/*I*/
-span:nth-of-type(5) {
-  position: relative;
-  bottom: 1175px;
-  left: 310px;
+.gif-lap{
+  position: absolute;
+  bottom: 2rem;
+  left: 27rem;
+  width: 40%;
 }
 
 #particle-canvas {
@@ -93,7 +52,7 @@ span:nth-of-type(5) {
   bottom: 0;
   right: 0;
   z-index: -2;
-  background-image: url('../assets/images/111.png');
+  /* background-image: url('../assets/images/111.png'); */
   background-size: cover;
 }
 
@@ -101,18 +60,6 @@ span:nth-of-type(5) {
   margin-bottom: 0;
 }
 
-.description {
-  position: absolute;
-  color: white;
-  text-align: center;
-  bottom:10px;
-  margin-right: 30px;
-  line-height: 25px;
-  font-family: 'Suranna', serif;
-  font-weight: lighter;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-}
 
 .nav-style {
   position: absolute;
@@ -130,14 +77,156 @@ span:nth-of-type(5) {
   width: 100%;
 }
 
-#home nav ul a:hover {
-  background-image: -webkit-linear-gradient(#000000, #e5008d, #ff070b);  /* Chrome 10-25, Safari 5.1-6 */;
+#home nav ul li {
+  transform-style: preserve-3d;
 }
 
-.logo {
-  width: 40px;
+#home nav ul li::after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background: #3a9999;
+  border-radius: 5px;
+  content: 'Flipped';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+ }
+
+#home nav a {
+  color: #fe9;
 }
 
 #sobreMi {
   padding: 9rem 0;
+}
+svg {
+  position: absolute;
+  left: 1rem;
+}
+/*Hover de botones del nav*/
+svg path {
+  stroke-dasharray: 265, 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.swiggleBox:hover svg path {
+  stroke-width: 3;
+  stroke-dasharray: 0, 350;
+  stroke-dashoffset: 20;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+/* Check Box */
+.checkBox {
+  /* Add Padding Left To Center Text */
+}
+.checkBox svg {
+  /* Presentation Purposes */
+  margin-left: -10px;
+}
+.checkBox svg rect, .checkBox svg polyline {
+  fill: none;
+  stroke: #078;
+  stroke-width: 2;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.checkBox:hover svg rect {
+  stroke-width: 2;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.checkBox:hover svg polyline {
+  stroke-width: 2;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.checkBox svg .button {
+  stroke-dasharray: 400px, 0;
+}
+.checkBox:hover svg .button {
+  stroke-dasharray: 0, 400px;
+  stroke-dashoffset: 33px;
+}
+/* Check Mark Effect */
+.box, .checkMark {
+  opacity: 0;
+}
+.checkBox:hover .box {
+  -webkit-animation: boxDisplay 0.2s forwards;
+  -moz-animation: boxDisplay 0.2s forwards;
+  -ms-animation: boxDisplay 0.2s forwards;
+  -o-animation: boxDisplay 0.2s forwards;
+  animation: boxDisplay 0.2s forwards;
+  -webkit-animation-delay: 0.65s;
+  -moz-animation-delay: 0.65s;
+  -ms-animation-delay: 0.65s;
+  -o-animation-delay: 0.65s;
+  animation-delay: 0.65s;
+}
+.checkBox:hover .checkMark {
+  -webkit-animation: checkDisplay 0.2s forwards;
+  -moz-animation: checkDisplay 0.2s forwards;
+  -ms-animation: checkDisplay 0.2s forwards;
+  -o-animation: checkDisplay 0.2s forwards;
+  animation: checkDisplay 0.2s forwards;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* Check Box Display */
+@-webkit-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes boxDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* Check Mark Display */
+@-webkit-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes checkDisplay {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
