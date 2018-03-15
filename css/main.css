@@ -17,8 +17,8 @@
 h1 {
   font-family: "ZELDA";
   position: absolute;
-  font-size: 6rem;
-  left: 16rem;
+  font-size: 5rem;
+  left: 21rem;
   top: 14rem;
   color: #c05;
   text-shadow: 4px 3px black;
@@ -41,17 +41,10 @@ h1 {
   position: absolute;
   color: #09a;
   text-align: center;
-  top: 23rem;
+  top: 21rem;
   font-size: 1.5rem;
   letter-spacing: 1.5px;
   z-index: 1;
-}
-
-.gif-lap {
-  position: absolute;
-  bottom: 2rem;
-  left: 27rem;
-  width: 40%;
 }
 
 #particle-canvas {
@@ -118,7 +111,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-#sobreMi {
+#sobreMi, #habilidades, proyectos {
   padding: 9rem 0;
 }
 svg {
@@ -261,7 +254,7 @@ svg path {
 }
 
 .back-green {
-  background-color: #09a;
+  background-color: #fe9;
 }
 
 .about-text {
@@ -269,5 +262,50 @@ svg path {
 }
 
 #sobreMi span {
-  color: #fe9;
+  color: #c05;
+}
+
+.skills-img {
+  width: 25%;
+}
+
+.html-css-js {
+  width: 45%;
+
+}
+
+.boostrap {
+  width: 37%;
+}
+
+.node {
+  width: 20%;
+}
+
+.web {
+  width: 30%;
+}
+
+.materialize {
+  width: 15%;
+}
+
+.boot {
+  width:18%;
+}
+
+#habilidades img {
+  margin: 0.5rem;
+}
+
+svg {
+  left: 6px;
+  top: 5px;
+}
+
+
+@media only screen and (max-device-width: 768px) {
+.skills-img {
+  width: 10%;
+}
 }
