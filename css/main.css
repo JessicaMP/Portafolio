@@ -14,110 +14,31 @@
   src: url("../assets/fonts/barrow/Barrow2Bold.woff");
 }
 
-h1 {
-  font-family: "ZELDA";
-  position: absolute;
-  font-size: 5rem;
-  left: 21rem;
-  top: 14rem;
-  color: #c05;
-  text-shadow: 4px 3px black;
-}
-.color-primary {
-  color: #c05;
-}
-
-.titles {
-  font-family: "ZELDA";
-  text-shadow: 2px 2px black;
-}
-
-.subtitle {
-  font-family: "Barrow2";
-}
-
-.description {
-  font-family: "Barrow2";
-  position: absolute;
-  color: #09a;
-  text-align: center;
-  top: 21rem;
-  font-size: 1.5rem;
-  letter-spacing: 1.5px;
-  z-index: 1;
-}
-
-#particle-canvas {
-  height: 100vh;
-  overflow: hidden;
-}
-
-.back {
-  z-index: 2;
-  background: black;/*rgba(0, 0, 0, 0.9)*/
-}
-
-.back::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -2;
-  /* background-image: url('../assets/images/111.png'); */
-  background-size: cover;
-}
-
-.row {
-  margin-bottom: 0;
-}
-
-.nav-style {
+.nav-left {
   position: absolute;
   transform-origin: top left;
   transform: rotate(-90deg) translate3d(-100%,0,0);
   width: 635px;
+  z-index: 2;
 }
 
-#home ul:not(.browser-default)>li {
-  width: 20%;
-  text-align: center;
+.black {
+  background-color: black;
 }
 
-#home ul:not(.browser-default) {
-  width: 100%;
-}
-
-#home nav ul li {
-  transform-style: preserve-3d;
-}
-
-#home nav ul li::after {
-  top: -100%;
-  left: 0px;
+#particle-canvas {
   width: 100%;
   position: absolute;
-  background: #3a9999;
-  border-radius: 5px;
-  content: 'Flipped';
-  transform-origin: left bottom;
-  transform: rotateX(90deg);
- }
-
-#home nav a {
-  color: #fe9;
-  font-family: "Barrow2";
-  font-size: 1.3rem;
+  top: 0;
 }
 
-#sobreMi, #habilidades, proyectos {
-  padding: 9rem 0;
+#work{
+  position: relative;
+  height: 39.8rem;
+  overflow: hidden;
+  display: block;
 }
-svg {
-  position: absolute;
-  left: 1rem;
-}
+
 /*Hover de botones del nav*/
 svg path {
   stroke-dasharray: 265, 0;
@@ -136,15 +57,11 @@ svg path {
   -o-transition: all 1s ease-in-out;
 }
 
-/* Check Box */
-.checkBox {
-  /* Add Padding Left To Center Text */
-}
-.checkBox svg {
-  /* Presentation Purposes */
+nav a svg {
   margin-left: -10px;
 }
-.checkBox svg rect, .checkBox svg polyline {
+
+nav a svg rect, nav a svg polyline {
   fill: none;
   stroke: #09a;
   stroke-width: 2;
@@ -153,24 +70,24 @@ svg path {
   -ms-transition: all 0.8s ease-in-out;
   -o-transition: all 0.8s ease-in-out;
 }
-.checkBox:hover svg rect {
+nav a:hover svg rect {
   stroke-width: 2;
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
   -ms-transition: all 0.8s ease-in-out;
   -o-transition: all 0.8s ease-in-out;
 }
-.checkBox:hover svg polyline {
+nav a:hover svg polyline {
   stroke-width: 2;
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
   -ms-transition: all 0.8s ease-in-out;
   -o-transition: all 0.8s ease-in-out;
 }
-.checkBox svg .button {
+nav a svg .button {
   stroke-dasharray: 400px, 0;
 }
-.checkBox:hover svg .button {
+nav a:hover svg .button {
   stroke-dasharray: 0, 400px;
   stroke-dashoffset: 33px;
 }
@@ -178,7 +95,7 @@ svg path {
 .box, .checkMark {
   opacity: 0;
 }
-.checkBox:hover .box {
+nav a:hover .box {
   -webkit-animation: boxDisplay 0.2s forwards;
   -moz-animation: boxDisplay 0.2s forwards;
   -ms-animation: boxDisplay 0.2s forwards;
@@ -190,7 +107,7 @@ svg path {
   -o-animation-delay: 0.65s;
   animation-delay: 0.65s;
 }
-.checkBox:hover .checkMark {
+nav a:hover .checkMark {
   -webkit-animation: checkDisplay 0.2s forwards;
   -moz-animation: checkDisplay 0.2s forwards;
   -ms-animation: checkDisplay 0.2s forwards;
@@ -245,24 +162,128 @@ svg path {
   100% { opacity: 1; }
 }
 /*Fin de hover button*/
+svg {
+  position: absolute;
+  left: -0.4rem;
+  top: -1.1rem;
+}
 
-/*SOBRE MI SECTION*/
+header nav ul li {
+  transform-style: preserve-3d;
+}
+
+header nav a {
+  color: #fe9;
+  font-family: "Barrow2";
+  font-size: 1.3rem;
+}
+
+.title {
+  font-family: "ZELDA";
+  font-size: 4.5rem;
+  text-shadow: 4px 3px black;
+}
+
+.color-primary {
+  color: #c05;
+}
+
+.back-primary {
+  background-color: #c05;
+}
+
+.titles {
+  font-family: "ZELDA";
+  text-shadow: 2px 2px black;
+  font-size: 3.56rem;
+}
+
+.subtitle {
+  font-family: "Barrow2";
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  z-index: 1;
+}
+
+.color-second {
+  color: #09a;
+}
+
+.name-center {
+  transform: translateY(120%)
+}
+
+.section {
+	z-index: 1;
+	min-height:420px;
+	width: 100%;
+	overflow:auto;
+	height:100%;
+	padding-top:100px;
+	padding-bottom:50px;
+	display:none;
+	top:0;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+
 .pin {
-  width: 30%;
-  background-color:  white;
+  width: 80%;
+  background-color: white;
   border-radius: 5rem;
 }
 
-.back-green {
+
+#img-container {
+  margin: 50px auto;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+#img-container:before, #img-container:after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  background: #000;
+  position: absolute;
+  top: 0;
+
+}
+
+#img-container:before {
+  transform: rotateZ(-3deg);
+  z-index: -1;
+}
+
+#img-container:after {
+  transform: rotateZ(-7deg);
+  z-index: -2;
+}
+
+#img-container:before,
+#img-container:after,
+#img-container img.stacked {
+  display: block;
+  border: 10px solid white;
+  border-bottom: 20px solid white;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.back-beige {
   background-color: #fe9;
+  z-index: -80;
 }
 
-.about-text {
-  font-size: 1.5rem;
-}
-
-#sobreMi span {
-  color: #c05;
+.color-beige {
+  color: #fe9;
 }
 
 .skills-img {
@@ -298,14 +319,139 @@ svg path {
   margin: 0.5rem;
 }
 
-svg {
-  left: 6px;
-  top: 5px;
+.project {
+  height: 500px;
+  margin-top: -40px;
+  z-index: 1;
 }
 
-
-@media only screen and (max-device-width: 768px) {
-.skills-img {
-  width: 10%;
+.fig-image {
+  width: 70%;
+  height: 80%;
+  margin-top: 35px;
 }
+
+.image {
+  width: 100%;
+  height: 360px;
+}
+
+figure.style {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  margin-top: 48px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  
+}
+
+figcaption h4 {
+  font-family: "ZELDA";
+}
+
+figcaption p {
+  font-family: "Barrow2";
+  font-size: 1.5rem;
+}
+
+figure.style {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+figure.style img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+figure.style figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+
+figure.style p, figure.style h4 {
+  margin: 0;
+}
+
+figure.style p{
+  -weight: 400;
+}
+
+figure.style h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #09a;
+  font-weight: bold;
+}
+
+figure.style i {
+  font-size: 32px;
+}
+
+figure.style:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+figure.style  a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.style:hover figcaption, figure.style.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+figure.style:hover:after, figure.style.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+
+.btn-font {
+  font-family: "Barrow2";
+  font-size: 1.3rem;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.foo {
+  font-family: "Barrow2";
 }
