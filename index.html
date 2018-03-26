@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--Boostrap Css-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <!--Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Bentham|Suranna" rel="stylesheet">
   <!--<link rel="icon" href="/css/master.css">-->
@@ -17,96 +18,159 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light nav-left p-3 mainmenu black">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <header class="bg-transparent">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light nav-left p-3 mainmenu nav-black">
+  <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          
+        <ul id="myTab" role="tablist" class=" nav nav-tabs navbar-nav d-block col-xl-12 mr-auto d-flex justify-content-between align-items-center">
+          <li class="nav-item active">
+            <a class="checkBox ml-3 nav-link" id="work-tab" href="#work" data-toggle="tab" aria-controls="work" aria-selected="true">Inicio<span class="sr-only">(current)</span>
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="checkBox nav-link" href="#sobreMi" id="sobreMi-tab" data-toggle="tab" role="tab" aria-controls="sobreMi" aria-selected="false">Sobre mí
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="checkBox nav-link" href="#habilidades" id="habilidades-tab" data-toggle="tab" role="tab" aria-controls="habilidades" aria-selected="false">Habilidades
+              <svg width="110" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="checkBox nav-link" href="#proyectos" id="proyectos-tab" data-toggle="tab" role="tab" aria-controls="proyectos" aria-selected="false">Proyectos
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="checkBox nav-link" href="#contact" id="contact-tab" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Contacto
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-left p-3 mainmenu nav-black">
+      <button class="navbar-toggler  bg-info" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent col-xl-12">
-        <ul id="myTab" role="tablist" class="nav nav-tabs navbar-nav d-block col-xl-12 mr-auto d-flex justify-content-between align-items-center">
-            <li class="nav-item">
-                <a class="checkBox ml-3 active" id="work-tab" href="#work" data-toggle="tab" aria-controls="work" aria-selected="true">Inicio
-                    <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="10" class="button" width="128.8" height="63.9" />
-                      <rect x="0" y="22.5" class="box" width="20" height="20" />
-                      <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-                    </svg>
-                  </a>
-              </li>
-          <li class="nav-item">
-              <a class="checkBox" href="#sobreMi" id="sobreMi-tab" data-toggle="tab" role="tab" aria-controls="sobreMi" aria-selected="false">Sobre mí
-                  <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" class="button" width="128.8" height="63.9" />
-                    <rect x="0" y="22.5" class="box" width="20" height="20" />
-                    <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-                  </svg>
-                  </a>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul id="myTab" role="tablist" class=" nav nav-tabs navbar-nav d-block col-xl-12 mr-auto d-flex justify-content-between align-items-center">
+          <li class="nav-item  active">
+            <a class="checkBox ml-3 nav-link" id="work-tab" href="#work" data-toggle="tab" aria-controls="work" aria-selected="true">Inicio<span class="sr-only">(current)</span>
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
           </li>
           <li class="nav-item">
-              <a class="checkBox" href="#habilidades" id="habilidades-tab" data-toggle="tab" role="tab" aria-controls="habilidades" aria-selected="false">Habilidades
-                  <svg width="110" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" class="button" width="128.8" height="63.9" />
-                    <rect x="0" y="22.5" class="box" width="20" height="20" />
-                    <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-                  </svg>
-                </a>
+            <a class="checkBox nav-link" href="#sobreMi" id="sobreMi-tab" data-toggle="tab" role="tab" aria-controls="sobreMi" aria-selected="false">Sobre mí
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
           </li>
           <li class="nav-item">
-              <a class="checkBox" href="#proyectos" id="proyectos-tab" data-toggle="tab" role="tab" aria-controls="proyectos" aria-selected="false">Proyectos
-                  <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" class="button" width="128.8" height="63.9" />
-                    <rect x="0" y="22.5" class="box" width="20" height="20" />
-                    <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-                  </svg>
-                </a>
+            <a class="checkBox nav-link" href="#habilidades" id="habilidades-tab" data-toggle="tab" role="tab" aria-controls="habilidades" aria-selected="false">Habilidades
+              <svg width="110" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
           </li>
           <li class="nav-item">
-              <a class="checkBox" href="#contact" id="contact-tab" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Contacto
-                  <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" class="button" width="128.8" height="63.9" />
-                    <rect x="0" y="22.5" class="box" width="20" height="20" />
-                    <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-                  </svg>
-                </a>
-          </li>        
+            <a class="checkBox nav-link" href="#proyectos" id="proyectos-tab" data-toggle="tab" role="tab" aria-controls="proyectos" aria-selected="false">Proyectos
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="checkBox nav-link" href="#contact" id="contact-tab" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Contacto
+              <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" class="button" width="128.8" height="63.9" />
+                <rect x="0" y="22.5" class="box" width="20" height="20" />
+                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-  </header>
-  
-  <section id="work" class="py-5 black tab-pane show active" role="tabpanel" aria-labelledby="work-tab">
-      <div id="particle-canvas"></div>
-      <div class="container py-3">
-              <div class="row">
-                  <div class="col name-center">
-                <h1 class="text-center title color-primary">Jessica Manturano</h1>
-                <p class="text-center subtitle color-second">Desarrolladora front-end developer y Marketing Digital</p>
-              </div>
-            </div>
-      </div>
-    </section>
 
-    <section id="sobreMi" class="tab-pane back-beige" role="tabpanel" aria-labelledby="sobreMi-tab">
-        <div class="container">
-          <div class="row">
-            <div class="col h-100 d-flex justify-content-center align-items-center">
-              <div class="col-xl-4 align-self-center">
-                <h2 class="titles color-primary text-center">Sobre Mi</h2>
-                <div id="img-container">
-                <img src="assets/images/JessicaMP.jpg" alt="Logo" class="stacked rounded mx-auto d-block img-fluid">
-                </div>
-              </div>
-              <div class="col-xl-8 align-self-center">
-                <div class="col-xl-10 offset-xl-2">
-    
-                  <p class="subtitle about-text text-center">Hola, soy
-                    <span class="color-primary">Jessica Manturano</span> y te doy la Bienvenida a mi pagina web, aquí te mostrare mis proyectos.
-                    <br> En el codigo encontre la pasión de mejorar y aprender la escencia que tiene cada proyecto. Me gusta trabajar
-                    en el desarrollo de la innovación tecnológica, códigos de diseño e implementación de páginas web.
-                    <br> Predispuesta a trabajar en equipo y asumir cualquier reto en el sector tech.</p>
-                  <div class="d-flex justify-content-center align-items-center">
-                      <ul class="ch-grid d-flex justify-content-center align-items-center">
-                          <li>
+  </header>
+
+  <section id="work" class="black tab-pane show active h-100" role="tabpanel" aria-labelledby="work-tab">
+
+    <div id="particle-canvas"></div>
+
+    <div class="container">
+
+      <div class="row h-100 h-work-mobile-100">
+        <div class="col d-flex align-self-center flex-column">
+          <!--  name-center -->
+          <h1 class="text-center title color-primary">Jessica Manturano</h1>
+          <p class="text-center subtitle color-second">Desarrolladora front-end developer y Marketing Digital</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobreMi" class="tab-pane back-beige" role="tabpanel" aria-labelledby="sobreMi-tab">
+    <div class="container h-100">
+      <div class="row">
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+
+          <div class="col-md-4 col-12 align-self-center">
+            <h2 class="titles color-primary text-center">Sobre Mi</h2>
+            <div id="img-container">
+              <img src="assets/images/JessicaMP.jpg" alt="Logo" class="stacked rounded mx-auto d-block img-fluid">
+            </div>
+          </div>
+          <div class="col-md-8 col-12 align-self-center">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-md-10 col-11 offset-md-2">
+
+                <p class="subtitle about-text text-center">Hola, soy
+                  <span class="color-primary">Jessica Manturano</span> y te doy la Bienvenida a mi pagina web, aquí te mostrare mis proyectos.
+                  <br> En el codigo encontre la pasión de mejorar y aprender la escencia que tiene cada proyecto. Me gusta trabajar
+                  en el desarrollo de la innovación tecnológica, códigos de diseño e implementación de páginas web.
+                  <br> Predispuesta a trabajar en equipo y asumir cualquier reto en el sector tech.</p>
+                <!-- <div class="d-flex justify-content-center align-items-center"> -->
+                <!-- <ul class="row ch-grid justify-content-center align-items-center">
+                          <li class="col-4">
                             <div class="ch-item ch-img-1">				
                               <div class="ch-info-wrap">
                                 <div class="ch-info">
@@ -118,7 +182,7 @@
                               </div>
                             </div>
                           </li>
-                          <li>
+                          <li class="col-4">
                             <div class="ch-item ch-img-2">
                               <div class="ch-info-wrap">
                                 <div class="ch-info">
@@ -130,7 +194,7 @@
                               </div>
                             </div>
                           </li>
-                          <li>
+                          <li class="col-4">
                             <div class="ch-item ch-img-3">
                               <div class="ch-info-wrap">
                                 <div class="ch-info">
@@ -142,206 +206,221 @@
                               </div>
                             </div>
                           </li>
-                        </ul>
-                </div>
+                        </ul> -->
+                <figure class="row justify-content-center align-items-center">
+                  <img class="pin col-md-3 col-3" src="assets/images/mejor_squad.png" alt="Pin Mejor squad">
+                  <img class="pin col-md-3 col-3" src="assets/images/best_teamplayer.png" alt="Pin Best teamplayer">
+                  <img class="pin col-md-3 col-3" src="assets/images/mejor_squad.png" alt="Pin Mejor squad">
+                </figure>
+                <!-- </div> -->
               </div>
             </div>
-          </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section id="habilidades" class="tab-pane p-4 back-primary" role="tabpanel" aria-labelledby="habilidades-tab">
-          <div class="container mt-3 mb-3">
-            <div class="row d-flex flex-column justify-content-center">
-              <center>
-                <h2 class="titles text-center color-beige font-weight-bold">Habilidades</h2>
-              </center>
-              <div class="col-xl-6 col-12 offset-xl-3 ">
-                <div class="d-flex justify-content-center">
-                  <img class="html-css-js center" src="assets/images/skills/3.png" alt="">
-                </div>
+  <section id="habilidades" class="h-100 tab-pane pt-4 back-primary" role="tabpanel" aria-labelledby="habilidades-tab">
+    <div class="container mt-3">
+      <div class="row justify-content-center align-items-center">
+        <center>
+          <h2 class="titles text-center color-beige font-weight-bold">Habilidades</h2>
+        </center>
+        <div class="col-md-9 col-11">
+          <div class="row justify-content-center align-items-center">
+            <img class="html-css-js center" src="assets/images/skills/3.png" alt="">
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-11">
+            <div class="row justify-content-center align-items-center">
+              <div class="row justify-content-center align-items-center">
+                <img class="skills-img" src="assets/images/skills/14.png" alt="">
+                <img class="skills-img" src="assets/images/skills/1.png" alt="">
+                <img class="skills-img" src="assets/images/skills/2.png" alt="">
               </div>
-              <div class="d-flex justify-content-center">
-              <div class="col-xl-6 col-12 d-flex flex-column justify-content-center ">
-      
-                <div class="d-flex justify-content-center align-items-center">
-                  <img class="skills-img" src="assets/images/skills/14.png" alt="">
-                  <img class="skills-img" src="assets/images/skills/1.png" alt="">
-                  <img class="skills-img" src="assets/images/skills/2.png" alt="">
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <img class="materialize" src="assets/images/skills/5.png" alt="">
-                  <img class="skills-img" src="assets/images/skills/6.png" alt="">
-                </div>
-      
-                <div class="d-flex justify-content-center align-items-center">
-                  <img class="skills-img" src="assets/images/skills/16.png" alt="">
-                  <img class="skills-img" src="assets/images/skills/8.png" alt="">
-                </div>
+              <div class="row justify-content-center align-items-center">
+                <img class="materialize" src="assets/images/skills/5.png" alt="">
+                <img class="skills-img" src="assets/images/skills/6.png" alt="">
               </div>
-      
-              <div class="col-xl-6 col-12 margin-img">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img class="node" src="assets/images/skills/7.png" alt="">
-                  <img class="boostrap" src="assets/images/skills/11.png" alt="">
-                  <img class="node" src="assets/images/skills/9.png" alt="">
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <img class="boostrap" src="assets/images/skills/web.png" alt="">
-                  <img class="skills-img" src="assets/images/skills/15.png" alt="">
-                  <img class="skills-img" src="assets/images/skills/4.png" alt="">
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                  <img class="skills-img" src="assets/images/skills/12.png" alt="">
-                  <img class="skills-img" src="assets/images/skills/13.png" alt="">
-                </div>
+
+              <div class="row justify-content-center align-items-center">
+                <img class="skills-img" src="assets/images/skills/16.png" alt="">
+                <img class="skills-img" src="assets/images/skills/8.png" alt="">
               </div>
             </div>
-            </div>
-        </section>
+          </div>
 
-        <section id="proyectos" class="tab-pane back-beige pt-3 pb-3" role="tabpanel" aria-labelledby="proyectos">
-            <div class="container">
-              <div class="row d-flex justify-content-center flex-column">
-                  <h2 class="titles color-primary titles text-center font-weight-bold">Proyectos</h2>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-4 col-xs-12 project mt-3">
-                      <div class="row d-flex justify-content-center">
-                        <figure class="style fig-image border border-info rounded">
-                          <img src="assets/images/proyect/flashBitacora.png" class="image" />
-                          <figcaption>
-                            <h4>Flash Bitácora</h4>
-                            <p>Es una pagina web en la que podrás agregar mensajes, imágenes, audio, video, ubicaciones y fechas.</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="row d-flex justify-content-center">
-                        <div class="m-3">
-                          <a role="button" class="btn btn-outline-info btn-font" href="https://github.com/JessicaMP/flash_bitacora" target="_blank">
-                            Código</a>
-                        </div>
-                        <div class="m-3">
-                          <a role="button" class="btn btn-outline-info btn-font" href="https://jessicamp.github.io/flash_bitacora/public/index.html" target="_blank">DEMO</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-xs-12 project mt-3">
-                      <div class="row d-flex justify-content-center">
-                        <figure class="style fig-image  border border-info rounded">
-                          <img src="assets/images/proyect/cinefipedia2.PNG" class="image" />
-                          <figcaption>
-                            <h4>Cinefipedia</h4>
-                            <p>Cinefipedia es un web-responsive que brinda información sobre películas y te permite guardar tus favoritas.</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="row d-flex justify-content-center">
-                        <div class="m-3">
-                          <a role="button" class="btn btn-outline-info btn-font" href="https://github.com/JessicaMP/Cinefipedia" target="_blank">
-                            </span>Código</a>
-                        </div>
-                        <div class="m-3">
-                          <a role="button" class="btn btn-outline-info btn-font" href="javascript:window.open('https://kankkuna.github.io/Cinefipedia','','width=380,height=600,left=50,top=50,toolbar=yes');void 0" class="btn btn-important" target="_blank">DEMO</a>
-                        </div>
-                      </div>
-            
-                    </div>
-                    <div class="col-md-4 col-xs-12 project mt-3">
-                      <div class="row d-flex justify-content-center">
-                        <figure class="style fig-image  border border-info rounded">
-                          <img src="assets/images/proyect/cardify1.PNG" class="image" />
-                          <figcaption>
-                            <h4>Cardify</h4>
-                            <p>Es una Plugin que te permite ordenar y mostrar tus imágenes de manera óptima para los usuarios. ¡Pruébalo!</p>
-                          </figcaption>
-                        </figure>
-                      </div>
-                      <div class="row d-flex justify-content-center">
-                        <div class="m-3">
-                          <a role="button" class="btn btn-outline-info btn-font" href="https://github.com/JessicaMP/cardify" target="_blank">
-                            Código</a>
-                        </div>
-                        <div class="m-3">
-                          <a role="button" class="btn btn-outline-info btn-font" href="https://jessicamp.github.io/cardify/public/index.html" target="_blank">DEMO</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div class="col-md-6 col-11 margin-img">
+            <div class="row justify-content-center align-items-center">
+              <img class="node" src="assets/images/skills/7.png" alt="">
+              <img class="boostrap" src="assets/images/skills/11.png" alt="">
+              <img class="node" src="assets/images/skills/9.png" alt="">
+            </div>
+            <div class="row justify-content-center align-items-center">
+              <img class="boostrap" src="assets/images/skills/web.png" alt="">
+              <img class="skills-img" src="assets/images/skills/15.png" alt="">
+              <img class="skills-img" src="assets/images/skills/4.png" alt="">
+            </div>
+            <div class="row justify-content-center align-items-center">
+              <img class="skills-img" src="assets/images/skills/12.png" alt="">
+              <img class="skills-img" src="assets/images/skills/13.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="proyectos" class="h-100 tab-pane back-beige pt-3 pb-3" role="tabpanel" aria-labelledby="proyectos">
+    <div class="container">
+      <div class="row d-flex justify-content-center flex-column">
+        <h2 class="titles color-primary titles text-center font-weight-bold">Proyectos</h2>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 col-8 offset-1 offset-md-0 project mt-3">
+            <div class="row d-flex justify-content-center">
+              <figure class="style fig-image border border-info rounded">
+                <img src="assets/images/proyect/flashBitacora.png" class="image" />
+                <figcaption>
+                  <h4>Flash Bitácora</h4>
+                  <p>Es una pagina web en la que podrás agregar mensajes, imágenes, audio, video, ubicaciones y fechas.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="m-3">
+                <a role="button" class="btn btn-outline-info btn-font" href="https://github.com/JessicaMP/flash_bitacora" target="_blank">
+                  Código</a>
+              </div>
+              <div class="m-3">
+                <a role="button" class="btn btn-outline-info btn-font" href="https://jessicamp.github.io/flash_bitacora/public/index.html"
+                  target="_blank">DEMO</a>
               </div>
             </div>
-          </section>
-
-          <section class="h100 bg-black relative pt-5 pb-5 tab-pane back-primary" id="contact" role="tabpanel" aria-labelledby="contact">
-
-              <div class="text-center">
-                <h1 class="m-3 titles color-beige titles text-center font-weight-bold">CONTÁCTAME</h1>
+          </div>
+          <div class="col-md-4 col-8 offset-1 offset-md-0 project mt-3">
+            <div class="row d-flex justify-content-center">
+              <figure class="style fig-image  border border-info rounded">
+                <img src="assets/images/proyect/cinefipedia2.PNG" class="image" />
+                <figcaption>
+                  <h4>Cinefipedia</h4>
+                  <p>Cinefipedia es un web-responsive que brinda información sobre películas y te permite guardar tus favoritas.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="m-3">
+                <a role="button" class="btn btn-outline-info btn-font" href="https://github.com/JessicaMP/Cinefipedia" target="_blank">
+                  </span>Código</a>
               </div>
-              <div class="h300 mt-5 mb-5">
-              <div class="container">
-                <div class="row d-flex align-items-center">
-                  <div class="col-12 col-lg-3 col-sm-3 text-center">
-                      <a href="mailto:jessica95.mp@gmail.com">
-                    <img class="img-fluid w-30 " src="assets/images/Email.png" alt="mail">
-                    <div class="mt-4 subtitle color-beige">
-                      <h4 class=" text-uppercase">E-mail</h4>
-                      <p class="white">jessica95.mp@gmail.com</p>
-                    </div>
-                    </a>
-          
-                  </div>
-                  <div class="col-12 col-lg-3 col-sm-3 text-center">
-                      <a href="https://github.com/JessicaMP" target="blank">
-                    <img class="img-fluid w-30" src="assets/images/git.png" alt="mail">
-                    <div class="mt-4 subtitle color-beige">
-                        <h4 class=" text-uppercase">Github</h4>
-                      <p class=" white" href="" target="blank">JessicaMP</p>
-                    </div>
-                      </a>
-          
-                  </div>
-                  <div class="col-12 col-lg-3 col-sm-3 text-center">
-                    <a href="https://www.linkedin.com/in/jessica-manturano/" target="blank">
-                    <img class="img-fluid w-30"  src="assets/images/linkedin.png" alt="mail">
-                    <div class="mt-4 subtitle color-beige">
-                        <h4 class=" text-uppercase">Linkedin</h4>
-                      <p class="white ">/jessica-manturano</p>
-                    </div>
-                  </a>
-          
-                  </div>
-                  <div class="col-12 col-lg-3 col-sm-3 text-center">
-                      <a href="#">
-                      <img class="img-fluid w-30"  src="assets/images/phone.png" alt="mail">
-                      <div class="mt-4 subtitle color-beige">
-                          <h4 class="text-uppercase">Teléfono</h4>
-                        <p class="white ">936-584-793</p>
-                      </div>
-                    </a>
-            
-                    </div>
-                </div>
-                <div class="text-center mt-3"> 
-                    <a class="btn btn-outline-info subtitle color-beige" href="#" >Ver CV</a>
-                </div>
+              <div class="m-3">
+                <a role="button" class="btn btn-outline-info btn-font" href="javascript:window.open('https://kankkuna.github.io/Cinefipedia','','width=380,height=600,left=50,top=50,toolbar=yes');void 0"
+                  class="btn btn-important" target="_blank">DEMO</a>
               </div>
             </div>
-            <footer class="white absolute bottom text-center w100 border-footer pt-5 pb-3">
-              <p class="color-beige foo"> © 2018  Jessica Manturano Paucar</p>
-            </footer>
-          
-            </section>
-          
+
+          </div>
+          <div class="col-md-4 col-8 offset-1 offset-md-0 project mt-3">
+            <div class="row d-flex justify-content-center">
+              <figure class="style fig-image  border border-info rounded">
+                <img src="assets/images/proyect/cardify1.PNG" class="image" />
+                <figcaption>
+                  <h4>Cardify</h4>
+                  <p>Es una Plugin que te permite ordenar y mostrar tus imágenes de manera óptima para los usuarios. ¡Pruébalo!</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="m-3">
+                <a role="button" class="btn btn-outline-info btn-font" href="https://github.com/JessicaMP/cardify" target="_blank">
+                  Código</a>
+              </div>
+              <div class="m-3">
+                <a role="button" class="btn btn-outline-info btn-font" href="https://jessicamp.github.io/cardify/public/index.html" target="_blank">DEMO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="h-100 bg-black relative pt-5 pb-5 tab-pane back-primary" id="contact" role="tabpanel" aria-labelledby="contact">
+
+    <div class="text-center">
+      <h2 class="m-3 mt-4 titles color-beige titles text-center font-weight-bold">CONTÁCTAME</h2>
+    </div>
+    <div class="h300 mt-5 mb-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-6 col-sm-3 text-center">
+            <a href="mailto:jessica95.mp@gmail.com">
+              <img class="img-fluid w-30 " src="assets/images/Email.png" alt="mail">
+              <div class="mt-4 subtitle color-beige">
+                <h4 class=" text-uppercase">E-mail</h4>
+                <p class="white">jessica95.mp@gmail.com</p>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-3 text-center">
+            <a href="https://github.com/JessicaMP" target="blank">
+              <img class="img-fluid w-30" src="assets/images/git.png" alt="mail">
+              <div class="mt-4 subtitle color-beige">
+                <h4 class=" text-uppercase">Github</h4>
+                <p class=" white" href="" target="blank">JessicaMP</p>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-3 text-center">
+            <a href="https://www.linkedin.com/in/jessica-manturano/" target="blank">
+              <img class="img-fluid w-30" src="assets/images/linkedin.png" alt="mail">
+              <div class="mt-4 subtitle color-beige">
+                <h4 class=" text-uppercase">Linkedin</h4>
+                <p class="white ">/jessica-manturano</p>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-6 col-sm-3 text-center">
+            <a href="#">
+              <img class="img-fluid w-30" src="assets/images/phone.png" alt="mail">
+              <div class="mt-4 subtitle color-beige">
+                <h4 class="text-uppercase">Teléfono</h4>
+                <p class="white ">936-584-793</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <a class="btn btn-outline-info subtitle color-beige" href="#">Ver CV</a>
+        </div>
+      </div>
+    </div>
+    <footer class="white absolute bottom text-center w100 border-footer pt-5 pb-3">
+      <p class="color-beige foo"> © 2018 Jessica Manturano Paucar</p>
+    </footer>
+
+  </section>
+
   <!--  Boostrap-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <!-- Icon -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
+    crossorigin="anonymous"></script>
   <!--js-->
   <script src="js/particles.min.js"></script>
   <script src="js/configParticles.js"></script>
-  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
   <script src="js/app.js"></script>
 </body>
 
