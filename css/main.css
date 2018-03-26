@@ -14,13 +14,20 @@
   src: url("../assets/fonts/barrow/Barrow2Bold.woff");
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: transparent;
+}
+
 .nav-left {
   position: relative;
-  /* height: 500px; */
 }
 
 .black {
-  background-color: black;
+  background-color: rgb(194,241,255);
 }
 
 #particle-canvas {
@@ -51,9 +58,11 @@ header nav ul li {
 }
 
 header nav ul a {
-  color: #fe9 !important;
+  color: #FC5498 !important;
   font-family: "Barrow2";
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .title {
@@ -63,16 +72,25 @@ header nav ul a {
 }
 
 .color-primary {
-  color: #c05;
+  color: #DC1559;
+}
+
+.c-n-color {
+  color: rgb(194,241,255)
 }
 
 .back-primary {
-  background-color: #c05;
+  background-color: rgb(194,241,255);
+}
+
+.c-color {
+  color: #09a;
 }
 
 .titles {
+  color: #09a;
   font-family: "ZELDA";
-  text-shadow: 2px 2px black;
+  /* text-shadow: 2px 2px black; */
 }
 
 .subtitle {
@@ -82,11 +100,11 @@ header nav ul a {
 }
 
 .back-second {
-  background-color: #09a;
+  background-color: rgb(194,241,255);
 }
 
 .color-second {
-  color: #09a;
+  color: rgb(50,7,30);
 }
 
 .name-center {
@@ -116,7 +134,6 @@ header nav ul a {
   padding: 0;
 }
 
-
 #img-container {
   margin: 50px auto;
   width: 250px;
@@ -132,7 +149,6 @@ header nav ul a {
   background: #000;
   position: absolute;
   top: 0;
-
 }
 
 #img-container:before {
@@ -155,12 +171,12 @@ header nav ul a {
 }
 
 .back-beige {
-  background-color: #fe9;
+  background-color: #FC5498;
   z-index: -80;
 }
 
 .color-beige {
-  color: #fe9;
+  color: #FC5498;
 }
 
 .skills-img {
@@ -169,7 +185,6 @@ header nav ul a {
 
 .html-css-js {
   width: 45%;
-
 }
 
 .boostrap {
@@ -339,7 +354,7 @@ figure.style:hover:after, figure.style.hover:after {
 
 
 .nav-black {
-  background-color: black;
+  background-color: rgb(50,7,30);
 }
 
 .btn-drop {
@@ -364,13 +379,21 @@ figure.style:hover:after, figure.style.hover:after {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #c05;
+  background-color: rgb(194,241,255);
 }
 
 .nav-tabs .nav-link:hover {
   border-color: transparent;
 }
 
+#contact h4:hover, #contact p:hover {
+  color: #09a;
+}
+
+.btn-outline-info {
+  color: rgb(50,7,30);
+  border-color: rgb(50,7,30);
+}
 @media screen and (min-width: 992px) {
 
   #particle-canvas {
@@ -395,11 +418,7 @@ figure.style:hover:after, figure.style.hover:after {
     z-index: 2;
   }
 
-  /* .dropdown {
-    position: none;
-   } */
-
-   .titles {
+  .titles {
     font-family: "ZELDA";
     text-shadow: 2px 2px black;
     font-size: 3.56rem;
@@ -438,7 +457,7 @@ nav a svg {
 
 nav a svg rect, nav a svg polyline {
   fill: none;
-  stroke: #09a;
+  stroke: rgb(194,241,255);
   stroke-width: 2;
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
