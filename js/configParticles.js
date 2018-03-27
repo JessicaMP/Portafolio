@@ -1,7 +1,7 @@
 /* config dom id (optional) + config particles params */
 particlesJS('particle-canvas', {
   particles: {
-    color: '#f68',
+    color: '#124',
     shape: 'circle', // "circle", "edge" or "triangle"
     opacity: 1,
     size: 3.5,
@@ -10,7 +10,7 @@ particlesJS('particle-canvas', {
     line_linked: {
       enable_auto: true,
       distance: 150,
-      color: '#93236D',
+      color: '#d9a',
       opacity: 1,
       width: 0.7,
       condensed_mode: {

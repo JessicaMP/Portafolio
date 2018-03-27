@@ -27,7 +27,8 @@ a:hover {
 }
 
 .black {
-  background-color: rgb(194,241,255);
+  background-color: #aee;
+  /* background: linear-gradient(to right, #6ef,#0cc); */
 }
 
 #particle-canvas {
@@ -35,6 +36,10 @@ a:hover {
   position: absolute;
   top: 0;
   height: 100vh;
+}
+
+.about-me-color-box {
+  background-color: #eee;
 }
 
 
@@ -49,16 +54,12 @@ a:hover {
   height: 100vh !important;
 }
 
-svg {
-  display: none;
-}
-
 header nav ul li {
   transform-style: preserve-3d;
 }
 
 header nav ul a {
-  color: #FC5498 !important;
+  color: #d9a !important;
   font-family: "Barrow2";
   font-size: 1rem;
   font-weight: bold;
@@ -72,11 +73,16 @@ header nav ul a {
 }
 
 .color-primary {
-  color: #DC1559;
+  color: #d9a;
 }
 
 .c-n-color {
-  color: rgb(194,241,255)
+  color: #124;
+}
+
+#sobreMi p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
 }
 
 .back-primary {
@@ -88,14 +94,14 @@ header nav ul a {
 }
 
 .titles {
-  color: #09a;
+  color:  rgb(232,232,232);
   font-family: "ZELDA";
   /* text-shadow: 2px 2px black; */
 }
 
 .subtitle {
   font-family: "Barrow2";
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
   z-index: 1;
 }
 
@@ -109,6 +115,10 @@ header nav ul a {
 
 .name-center {
   transform: translateY(120%)
+}
+
+.color-span {
+  color: #d9a;
 }
 
 .section {
@@ -171,12 +181,12 @@ header nav ul a {
 }
 
 .back-beige {
-  background-color: #FC5498;
+  background-color: #124;
   z-index: -80;
 }
 
 .color-beige {
-  color: #FC5498;
+  color: #124;
 }
 
 .skills-img {
@@ -354,7 +364,8 @@ figure.style:hover:after, figure.style.hover:after {
 
 
 .nav-black {
-  background-color: rgb(50,7,30);
+  background-color: #aee;
+  border: 2px solid #124;
 }
 
 .btn-drop {
@@ -379,7 +390,7 @@ figure.style:hover:after, figure.style.hover:after {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: rgb(194,241,255);
+  background-color: #124;
 }
 
 .nav-tabs .nav-link:hover {
@@ -390,10 +401,19 @@ figure.style:hover:after, figure.style.hover:after {
   color: #09a;
 }
 
-.btn-outline-info {
-  color: rgb(50,7,30);
-  border-color: rgb(50,7,30);
+.btn-outline-secondary {
+  color: #fab;
+  border-color: #fab;
 }
+
+#habilidades a span {
+  font-size: 2rem;
+}
+
+#habilidades a span:hover {
+  color: #fab !important;
+}
+
 @media screen and (min-width: 992px) {
 
   #particle-canvas {
@@ -403,7 +423,7 @@ figure.style:hover:after, figure.style.hover:after {
 }
 
   .title {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   .subtitle {
@@ -414,7 +434,7 @@ figure.style:hover:after, figure.style.hover:after {
     position: absolute;
     transform-origin: top left;
     transform: rotate(-90deg) translate3d(-100%,0,0) !important;
-    width: 635px !important;
+    width: 100vh !important;
     z-index: 2;
   }
 
@@ -430,136 +450,11 @@ figure.style:hover:after, figure.style.hover:after {
 
   .image {
     width: 100%;
-    height: 360px;
+    height: 300px;
   }
 
-  /*Hover de botones del nav*/
-svg path {
-  stroke-dasharray: 265, 0;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-}
-.swiggleBox:hover svg path {
-  stroke-width: 3;
-  stroke-dasharray: 0, 350;
-  stroke-dashoffset: 20;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-}
+  #habilidades a span {
+    font-size: 4rem;
+  }
 
-nav a svg {
-  margin-left: -10px;
-}
-
-nav a svg rect, nav a svg polyline {
-  fill: none;
-  stroke: rgb(194,241,255);
-  stroke-width: 2;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-}
-nav a:hover svg rect {
-  stroke-width: 2;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-}
-nav a:hover svg polyline {
-  stroke-width: 2;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -ms-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-}
-nav a svg .button {
-  stroke-dasharray: 400px, 0;
-}
-nav a:hover svg .button {
-  stroke-dasharray: 0, 400px;
-  stroke-dashoffset: 33px;
-}
-/* Check Mark Effect */
-.box, .checkMark {
-  opacity: 0;
-}
-nav a:hover .box {
-  -webkit-animation: boxDisplay 0.2s forwards;
-  -moz-animation: boxDisplay 0.2s forwards;
-  -ms-animation: boxDisplay 0.2s forwards;
-  -o-animation: boxDisplay 0.2s forwards;
-  animation: boxDisplay 0.2s forwards;
-  -webkit-animation-delay: 0.65s;
-  -moz-animation-delay: 0.65s;
-  -ms-animation-delay: 0.65s;
-  -o-animation-delay: 0.65s;
-  animation-delay: 0.65s;
-}
-nav a:hover .checkMark {
-  -webkit-animation: checkDisplay 0.2s forwards;
-  -moz-animation: checkDisplay 0.2s forwards;
-  -ms-animation: checkDisplay 0.2s forwards;
-  -o-animation: checkDisplay 0.2s forwards;
-  animation: checkDisplay 0.2s forwards;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -ms-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  animation-delay: 1s;
-}
-/* Check Box Display */
-@-webkit-keyframes boxDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes boxDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-ms-keyframes boxDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes boxDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes boxDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-/* Check Mark Display */
-@-webkit-keyframes checkDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-moz-keyframes checkDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-ms-keyframes checkDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes checkDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-@keyframes checkDisplay {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-/*Fin de hover button*/
-svg {
-  display: block;
-  position: absolute;
-  left: -0.1rem;
-  top: -0.5rem;
-}
 }
