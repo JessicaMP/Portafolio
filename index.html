@@ -1,431 +1,588 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Boostrap Css-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  <!--<link rel="icon" href="/css/master.css">-->
-  <!--css-->
-  <link rel="stylesheet" href="css/effect-pin.css">
-  <link rel="stylesheet" href="assets/icons/style.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Jessica Manturano</title>
+    <!-- ==========     TÍTULO     ========== -->
+    <title>Jessica Manturano</title>
+    <!-- ========== META TAGS ========== -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jessica Manturano">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ========== CSS ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/1b98f46f85.js"></script>
+    <link rel="stylesheet" href="css/animate-header.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="assets/icons/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="bg-transparent">
-      <nav class="navbar navbar-expand-lg navbar-light nav-left p-2 mainmenu nav-black">
-      <button class="navbar-toggler back-beige" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul id="myTab" role="tablist" class=" nav nav-tabs navbar-nav d-block col-xl-12 mr-auto d-flex justify-content-between align-items-center">
-          <li class="nav-item  active">
-            <a class="checkBox ml-3 nav-link" id="work-tab" href="#work" data-toggle="tab" aria-controls="work" aria-selected="true">Inicio<span class="sr-only">(current)</span>
-              <!-- <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" class="button" width="128.8" height="63.9" />
-                <rect x="0" y="22.5" class="box" width="20" height="20" />
-                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-              </svg> -->
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="checkBox nav-link" href="#sobreMi" id="sobreMi-tab" data-toggle="tab" role="tab" aria-controls="sobreMi" aria-selected="false">Sobre mí
-              <!-- <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" class="button" width="128.8" height="63.9" />
-                <rect x="0" y="22.5" class="box" width="20" height="20" />
-                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-              </svg> -->
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="checkBox nav-link" href="#habilidades" id="habilidades-tab" data-toggle="tab" role="tab" aria-controls="habilidades" aria-selected="false">Habilidades
-              <!-- <svg width="110" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" class="button" width="128.8" height="63.9" />
-                <rect x="0" y="22.5" class="box" width="20" height="20" />
-                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-              </svg> -->
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="checkBox nav-link" href="#proyectos" id="proyectos-tab" data-toggle="tab" role="tab" aria-controls="proyectos" aria-selected="false">Proyectos
-              <!-- <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" class="button" width="128.8" height="63.9" />
-                <rect x="0" y="22.5" class="box" width="20" height="20" />
-                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-              </svg> -->
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="checkBox nav-link" href="#contact" id="contact-tab" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Contacto
-              <!-- <svg width="100" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" class="button" width="128.8" height="63.9" />
-                <rect x="0" y="22.5" class="box" width="20" height="20" />
-                <polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1" />
-              </svg> -->
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-  </header>
-
-  <section id="work" class="black tab-pane show active h-100" role="tabpanel" aria-labelledby="work-tab">
-
-    <div id="particle-canvas"></div>
-
-    <div class="container">
-
-      <div class="row h-100 h-work-mobile-100">
-        <div class="col d-flex align-self-center flex-column">
-          <!--  name-center -->
-          <h1 class="text-center title c-n-color">Jessica Manturano</h1>
-          <p class="text-center subtitle color-primary text-uppercase">Desarrolladora front-end developer y Marketing Digital</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sobreMi" class="tab-pane back-beige" role="tabpanel" aria-labelledby="sobreMi-tab">
-    <div class="container h-100">
-      <div class="row">
-        <div class="row d-flex justify-content-center align-items-center mt-5">
-
-          <div class="col-md-4 col-12 align-self-center mt-5">
-            <h2 class="titles text-center font-weight-bold">Sobre Mí</h2>
-            <div id="img-container">
-              <img src="assets/images/JessicaMP.jpg" alt="Logo" class="stacked rounded mx-auto d-block img-fluid">
-            </div>
-          </div>
-          <div class="col-md-8 col-12 align-self-center about-me-color-box">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-md-10 col-11">
-
-                <p class="text-center c-n-color">Hola, soy
-                  <span class="color-span">Jessica Manturano</span> y te doy la Bienvenida a mi pagina web, aquí te mostrare mis proyectos.
-                  <br> En el codigo encontre la pasión de mejorar y aprender la escencia que tiene cada proyecto. Me gusta trabajar
-                  en el desarrollo de la innovación tecnológica, códigos de diseño e implementación de páginas web.
-                  <br> Predispuesta a trabajar en equipo y asumir cualquier reto en el sector tech.</p>
-                <!-- <div class="d-flex justify-content-center align-items-center"> -->
-                <!-- <ul class="row ch-grid justify-content-center align-items-center">
-                          <li class="col-4">
-                            <div class="ch-item ch-img-1">				
-                              <div class="ch-info-wrap">
-                                <div class="ch-info">
-                                  <div class="ch-info-front ch-img-1"></div>
-                                  <div class="ch-info-back">
-                                    <h3>Pinky Coders</h3>
-                                  </div>	
-                                </div>
-                              </div>
+    <div class="se-pre-con"></div>
+    <!-- ========== PRELOADER ========== -->
+    <!-- ========== MENUBAR ========== -->
+    <div class="menubar">
+        <div class="menubar-content">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <div class="site-title">
+                                <h3>Jessi</h3>
                             </div>
-                          </li>
-                          <li class="col-4">
-                            <div class="ch-item ch-img-2">
-                              <div class="ch-info-wrap">
-                                <div class="ch-info">
-                                  <div class="ch-info-front ch-img-2"></div>
-                                  <div class="ch-info-back">
-                                    <h3>G-glasses-1</h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li class="col-4">
-                            <div class="ch-item ch-img-3">
-                              <div class="ch-info-wrap">
-                                <div class="ch-info">
-                                  <div class="ch-info-front ch-img-3"></div>
-                                  <div class="ch-info-back">
-                                    <h3>Corner Squad</h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul> -->
-                <figure class="row justify-content-center align-items-center">
-                  <img class="pin col-md-3 col-3" src="assets/images/mejor_squad.png" alt="Pin Mejor squad">
-                  <img class="pin col-md-3 col-3" src="assets/images/best_teamplayer.png" alt="Pin Best teamplayer">
-                  <img class="pin col-md-3 col-3" src="assets/images/mejor_squad.png" alt="Pin Mejor squad">
-                </figure>
-                <!-- </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="habilidades" class="h-100 tab-pane pt-4 back-primary" role="tabpanel" aria-labelledby="habilidades-tab">
-    <div class="container mt-3">
-      <div class="row justify-content-center align-items-center font-weight-bold text-center">
-        <center>
-          <h2 class="titles text-center color-beige font-weight-bold">Habilidades</h2>
-        </center>
-        <div class="col-md-11 col-11 mt-2 mb-2">
-          <div class="row justify-content-center align-items-center">
-              <div class="col-md-2 col-4">
-                  <a href="#"><span class="icon-javascript"></span></a>
-                  <p>Java Script</p>
-              </div>
-              <div class="col-md-2 col-4">
-                  <a href="#"><span class="icon-css3"></span></a>
-                  <p>Css3</p>
-              </div>
-              <div class="col-md-2 col-4">
-                  <a href="#"><span class="icon-html5"></span></a>
-                  <p>Html5</p>
-              </div>
-              <div class="col-md-2 col-4">
-                  <a href="#"><span class="icon-visualstudiocode"></span></a>
-                  <p>Visual Code</p>
-              </div>
-              <div class="col-md-2 col-4">
-                  <a href="#"><span class="icon-atom"></span></a>
-                  <p>Atom</p>
-              </div>
-              
-          </div>
-        </div>
-          <div class="col-md-11 col-11 mt-2 mb-2">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-jquery"></span></a>
-                    <p>jQuery</p>
-                </div>
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-bootstrap"></span></a>
-                    <p>Boostrap</p>
-                </div>
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-stackoverflow"></span></a>
-                    <p>Stackoverflow</p>
-                </div>
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-react"></span></a>
-                    <p>React</p>
-                </div>
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-redux"></span></a>
-                    <p>Redux</p>
-                </div>
-              </div>
-            </div>
-            
-          <div class="col-md-11 col-11 mt-2 mb-2">
-              <div class="row justify-content-center align-items-center ">
-                <div class="col-md-2 col-4">
-                  <a href="#"><span class="icon-nodejs"></span></a>
-                  <p>Node Js</p>
-                </div>
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-npm"></span></a>
-                    <p>Npm</p>
-                  </div>
-                  <div class="col-md-2 col-4">
-                      <a href="#"><span class="icon-webpack"></span></a>
-                      <p>Webpack</p>
-                    </div>
-                    <div class="col-md-2 col-4">
-                        <a href="#"><span class="icon-heroku"></span></a>
-                        <p>Heroku</p>
-                      </div>
-                      <div class="col-md-2 col-4">
-                          <a href="#"><span class="icon-firebase"></span></a>
-                          <p>Firebase</p>
                         </div>
-              </div>
-            </div>
-          <div class="col-md-11 col-11 mt-2 mb-2">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-sass"></span></a>
-                    <p>Sass</p>
-                  </div>
-              <div class="col-md-2 col-4">
-                  <a href="#"><span class="icon-codepen"></span></a>
-                  <p>Codepen</p>
-                </div>
-                <div class="col-md-2 col-4">
-                    <a href="#"><span class="icon-evernote"></span></a>
-                    <p>Evernote</p>
-                  </div>
-                  <div class="col-md-2 col-4">
-                      <a href="#"><span class="icon-trello"></span></a>
-                      <p>Trello</p>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="col-md-10 col-sm-10 navbar-style">
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href="#home" class="active">Inicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about">Sobre mí</a>
+                                    </li>
+                                    <li>
+                                        <a href="#work">Proyectos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#service">Habilidades</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-2 col-4">
-                        <a href="#"><span class="icon-slack"></span></a>
-                        <p>Slack</p>
-                      </div>
-            </div>
-
+                </div>
+            </nav>
         </div>
-
-  </section>
-
-  <section id="proyectos" class="h-100 tab-pane back-beige pt-3 pb-3" role="tabpanel" aria-labelledby="proyectos">
-    <div class="container">
-      <div class="row d-flex justify-content-center flex-column">
-        <h2 class="titles color-primary titles text-center font-weight-bold mt-5">Proyectos</h2>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-4 col-8 offset-1 offset-md-0 project mt-3">
-            <div class="row d-flex justify-content-center">
-              <figure class="style fig-image border border-info rounded">
-                <img src="assets/images/proyect/flashBitacora.png" class="image" />
-                <figcaption>
-                  <h4>Flash Bitácora</h4>
-                  <p>Es una pagina web en la que podrás agregar mensajes, imágenes, audio, video, ubicaciones y fechas.</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="row d-flex justify-content-center">
-              <div class="m-3">
-                <a role="button" class="btn btn-outline-secondary btn-font rounded-circle" href="https://github.com/JessicaMP/flash_bitacora" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Código">
-                  <i class="fab fa-github fa-lg"></i></a>
-              </div>
-              <div class="m-3">
-                <a role="button" class="btn btn-outline-secondary btn-font rounded-circle" href="https://jessicamp.github.io/flash_bitacora/public/index.html" data-toggle="tooltip" data-placement="bottom" title="Demo"
-                  target="_blank"><i class="fas fa-eye fa-lg fa-spin"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-8 offset-1 offset-md-0 project mt-3">
-            <div class="row d-flex justify-content-center">
-              <figure class="style fig-image  border border-info rounded">
-                <img src="assets/images/proyect/cinefipedia2.PNG" class="image" />
-                <figcaption>
-                  <h4>Cinefipedia</h4>
-                  <p>Cinefipedia es un web-responsive que brinda información sobre películas y te permite guardar tus favoritas.</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="row d-flex justify-content-center">
-              <div class="m-3">
-                <a role="button" class="btn btn-outline-secondary btn-font rounded-circle" href="https://github.com/JessicaMP/Cinefipedia" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Código">
-                  </span><i class="fab fa-github fa-lg"></i></a>
-              </div>
-              <div class="m-3">
-                <a role="button" class="btn btn-outline-secondary btn-font rounded-circle" href="javascript:window.open('https://kankkuna.github.io/Cinefipedia','','width=380,height=600,left=50,top=50,toolbar=yes');void 0"
-                  class="btn btn-important" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="fas fa-eye fa-lg fa-spin"></i></a>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 col-8 offset-1 offset-md-0 project mt-3">
-            <div class="row d-flex justify-content-center">
-              <figure class="style fig-image  border border-info rounded">
-                <img src="assets/images/proyect/cardify1.PNG" class="image" />
-                <figcaption>
-                  <h4>Cardify</h4>
-                  <p>Es una Plugin que te permite ordenar y mostrar tus imágenes de manera óptima para los usuarios. ¡Pruébalo!</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="row d-flex justify-content-center">
-              <div class="m-3">
-                <a role="button" class="btn btn-outline-secondary btn-font rounded-circle" href="https://github.com/JessicaMP/cardify" target="_blank">
-                  <i class="fab fa-github fa-lg" data-toggle="tooltip" data-placement="bottom" title="Código"></i></a>
-              </div>
-              <div class="m-3">
-                <a role="button" class="btn btn-outline-secondary btn-font rounded-circle" href="https://jessicamp.github.io/cardify/public/index.html" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Demo"><i class="fas fa-eye fa-lg fa-spin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <section class="h-100 bg-black relative pt-5 pb-5 tab-pane back-primary" id="contact" role="tabpanel" aria-labelledby="contact">
-
-    <div class="text-center">
-      <h2 class="m-3 mt-4 titles color-beige titles text-center font-weight-bold">CONTÁCTAME</h2>
-    </div>
-    <div class="h300 mt-5 mb-5">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-6 col-sm-2 text-center border about-me-color-box">
-            <a href="mailto:jessica95.mp@gmail.com" target="blank" class="color-primary">
-              <img class="img-fluid w-30 " src="assets/images/Email.png" alt="mail">
-              <div class="mt-4 subtitle">
-                <h4 class="font-weight-bold text-uppercase">E-mail</h4>
-                <p class="white">jessica95.mp <br>@gmail.com</p>
-              </div>
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-2 text-center border about-me-color-box">
-            <div class="row align-items-center">
-            <a href="https://github.com/JessicaMP" target="blank" class="color-primary">
-              <img class="img-fluid w-30" src="assets/images/git.png" alt="mail">
-              <div class="mt-4 subtitle">
-                <h4 class="font-weight-bold text-uppercase">Github</h4>
-                <p class=" white" href="" target="blank">JessicaMP</p>
-              </div>
-            </a>
+    <div class="main-page-content">
+        <div id="home">
+            <canvas id="particle-js"></canvas>
+            <div id="home-back">
+                <div class="home-content-main">
+                    <div class="table-cell">
+                        <div class="container">
+                            <div class="row home-row">
+                                <div class="col-md-12 col-sm-6">
+                                    <div class="home-text wow fadeInDown text-center">
+                                        <h1 class="cd-headline clip is-full-width">
+                                            <span class="cd-words-wrapper title" style="width: 266px; overflow: hidden;">
+                                                <b class="is-hidden">Marketing Digital</b>
+                                                <b class="is-hidden">Front-end Developer</b>
+                                                <b class="is-visible">Jessica Manturano</b>
+                                            </span>
+                                        </h1>
+                                        <a class="about-contact1" href="#work">Proyectos</a>
+                                        <a class="about-contact2" href="#contact">Contacto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-          </div>
-          <div class="col-6 col-sm-2 text-center border about-me-color-box">
-            <a href="https://www.linkedin.com/in/jessica-manturano/" target="blank" class="color-primary">
-              <img class="img-fluid w-30" src="assets/images/linkedin.png" alt="mail">
-              <div class="mt-4 subtitle">
-                <h4 class="font-weight-bold text-uppercase">Linkedin</h4>
-                <p class="white ">/jessica-manturano</p>
-              </div>
-            </a>
-
-          </div>
-          <div class="col-6 col-sm-2 text-center border about-me-color-box">
-            <a href="#" class="color-primary">
-              <img class="img-fluid w-30" src="assets/images/phone.png" alt="mail">
-              <div class="mt-4 subtitle">
-                <h4 class="font-weight-bold text-uppercase">Teléfono</h4>
-                <p class="white">936-584-793</p>
-              </div>
-            </a>
-
-          </div>
         </div>
-        <div class="text-center mt-3">
-          <a class="btn btn-outline-secondary subtitle" href="#">Ver CV</a>
+
+        <!-- ================================ SOBRE MÍ =============================== -->
+
+        <div id="about">
+            <div class="about-content">
+                <div class="what-we-do-grid text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-title text-center wow fadeIn ">
+                                    <h3>Sobre mí</h3>
+                                    <div class="underline1"></div>
+                                    <div class="underline2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="me-grid">
+                    <div class="about-hover"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12 about-col">
+                                <div id="img-container" class="about-image">
+                                    <img src="assets/image/JessicaMP.jpg" alt="Logo" class="about-img wow fadeIn stacked">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-6 col-xs-12 about-col">
+                                <div class="about-details wow fadeIn">
+                                    <p class="wow fadeIn">Hola, soy Jessica Manturano y te doy la Bienvenida a mi pagina web, aquí te mostrare
+                                        mis proyectos.
+                                        <br>Puedo decirte que en el codigo encontre la pasión de mejorar y aprender la escencia
+                                        que tiene cada proyecto. Me gusta trabajar en el desarrollo de la innovación tecnológica,
+                                        códigos de diseño e implementación de páginas web.
+                                        <br> Predispuesta a trabajar en equipo y asumir cualquier reto en el sector tech.</p>
+                                        <h4>Reconocimientos Obtenidos:</h4>
+                                        <figure class="col-md-10 col-sm-5 col-xs-12 col-md-offset-2">
+                                        <img class="pin col-md-3 col-xs-6" src="assets/image/mejor_squad.png" alt="Pin Mejor squad">
+                                        <img class="pin col-md-3 col-xs-6" src="assets/image/best_teamplayer.png" alt="Pin Best teamplayer">
+                                        <img class="pin col-md-3 col-xs-6 col-xs-offset-3 col-md-offset-0" src="assets/image/mejor_squad.png" alt="Pin Mejor squad">
+                                    </figure>
+                                    <a class="about-contact3" href="#contact">Contáctame</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- ================================ PROYECTOS =============================== -->
+
+        <div id="work">
+            <div class="work-content">
+                <div class="work-grid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-title text-center wow fadeIn">
+                                    <h3>Proyectos</h3>
+                                    <div class="underline1"></div>
+                                    <div class="underline2"></div>
+                                    <p>Estos son algunos de los proyectos desarrollados durante mi tiempo de preparación en
+                                        Laboratoria.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-details">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class=" col-md-10 col-md-offset-2 col-xs-12">
+                                    <ul id="filters" class="clearfix">
+                                        <li>
+                                            <span class="filter active" data-filter=".web, .graphics, .development">Todos</span>
+                                        </li>
+                                        <li>
+                                            <span class="filter" data-filter=".web">Cinefipedia</span>
+                                        </li>
+                                        <li>
+                                            <span class="filter" data-filter=".graphics">Cardify</span>
+                                        </li>
+                                        <li>
+                                            <span class="filter" data-filter=".development">Flash Bitácora</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="portfoliolist">
+                                    <div class="portfolio graphics col-md-12 col-xs-12" data-cat="graphics">
+                                        <div class="portfolio-wrapper wow fadeIn col-md-4 col-xs-12 padding-0" data-wow-delay=".2s">
+                                            <div class="overlay text-center">
+                                                <div class="port-over"></div>
+                                                <div class="overlay-main">
+                                                    <div class="table-cell">
+                                                        <h3>Ver más</h3>
+                                                        <a class="fancybox" href="assets/image/proyect/cardify.PNG" title="little something about the image">
+                                                            <i class="fa fa-search work-icon" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <img src="assets/image/proyect/cardify.PNG" alt="" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h2 class="text-center">Cardify</h2>
+                                            <p>El plugin de Cardify busca todas las imágenes que se encuentren dentro de un
+                                                contenedor y semánticamente las coloca dentro de una etiqueta figure junto
+                                                con una etiqueta figcaption que adquiere el texto del atributo alt de dicha
+                                                imagen. Este plugin contiene estilos css y de Bootstrap ya definidos.</p>
+                                            <div class="col-md-8 col-md-offset-4 margin-3">
+                                                <a class="about-contact1" href="https://github.com/JessicaMP/cardify" target="_blank">Código</a>
+                                                <a class="about-contact2" href="https://jessicamp.github.io/cardify/public/index.html" target="_blank">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio web col-md-12 col-xs-12" data-cat="web">
+                                        <div class="col-md-8 col-xs-12">
+                                            <h2 class="text-center">Cinefipedia</h2>
+                                            <p>Cinefipedia es una web que te brinda información sobre películas de diferentes
+                                                géneros, a su vez puedes guardar aquellas películas que deseas ver después,
+                                                para ello solo necesitas registrarte. </p>
+                                            <div class="col-md-8 col-md-offset-4 margin-3">
+                                                <a class="about-contact1" href="https://github.com/JessicaMP/Cinefipedia" target="_blank">Código</a>
+                                                <a class="about-contact2" href="https://kankkuna.github.io/Cinefipedia" target="_blank">Demo</a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-wrapper wow fadeIn col-md-4 col-xs-12 padding-0" data-wow-delay=".4s">
+                                            <div class="overlay text-center">
+                                                <div class="port-over"></div>
+                                                <div class="overlay-main">
+                                                    <div class="table-cell">
+                                                        <h3>Ver más</h3>
+                                                        <a class="fancybox" href="assets/image/proyect/cinefipedia.PNG" title="little something about the image">
+                                                            <i class="fa fa-search work-icon" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="assets/image/proyect/cinefipedia.PNG" alt="" />
+                                        </div>
+
+                                    </div>
+                                    <div class="portfolio development col-md-12 col-xs-12" data-cat="development">
+                                        <div class="portfolio-wrapper wow fadeIn col-md-4 col-xs-12 padding-0" data-wow-delay=".6s">
+                                            <div class="overlay text-center">
+                                                <div class="port-over"></div>
+                                                <div class="overlay-main">
+                                                    <div class="table-cell">
+                                                        <h3>Ver más</h3>
+                                                        <a class="fancybox" href="assets/image/proyect/flashBitacora.png" title="little something about the image">
+                                                            <i class="fa fa-search work-icon" aria-hidden="true"></i>
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <img src="assets/image/proyect/flashBitacora.png" alt="" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-12">
+                                            <h2 class="text-center">Flash Bitácora</h2>
+                                            <p>Flash Bitácora es una web responsive en te permite subir fotos, vídeos, audios,
+                                                notas, agregar eventos.</p>
+                                            <div class="col-md-8 col-md-offset-4 margin-3">
+                                                <a class="about-contact1" href="https://github.com/JessicaMP/flash_bitacora" target="_blank">Código</a>
+                                                <a class="about-contact2" href="https://jessicamp.github.io/flash_bitacora/public/index.html" target="_blank">Demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================== HABILIDADES ===================================================== -->
+
+        <div id="service">
+            <div class="service-content">
+                <div class="service-grid text-left">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="main-title text-center wow fadeIn">
+                                    <h3>Mis Habilidades</h3>
+                                    <div class="underline1"></div>
+                                    <div class="underline2"></div>
+                                    <p>Estas son algunas de las habilidades que aprendí durante el Bootcamp.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row main-row wow fadeIn">
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+
+                                    <div class="media2  text-center">
+                                        <i class="icon-html5 service-icon"></i>
+                                        <p>Html5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-javascript service-icon text-center"></i>
+                                        <p>Java Script</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-css3 service-icon"></i>
+                                        <p>Css3</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2  text-center">
+                                        <i class="icon-visualstudiocode service-icon"></i>
+                                        <p>Visual Code</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-atom service-icon"></i>
+                                        <p>Atom</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6 ">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-jquery service-icon"></i>
+                                       <p>jQuery</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-bootstrap service-icon"></i>
+                                        <p>Boostrap</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-stackoverflow service-icon"></i>
+                                        <p>Stackoverflow</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-react service-icon"></i>
+                                        <p>React</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-redux service-icon"></i>
+                                        <p>Redux</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-nodejs service-icon"></i>
+                                        <p>Node Js</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-npm service-icon"></i>
+                                        <p>Npm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-webpack service-icon"></i>
+                                        <p>Webpack</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-sass service-icon"></i>
+                                        <p>Sass</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-firebase service-icon"></i>
+                                        <p>Firebase</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-github service-icon"></i>
+                                        <p>Github</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-codepen service-icon"></i>
+                                        <p>Codepen</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-evernote service-icon"></i>
+                                        <p>Evernote</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-trello service-icon"></i>
+                                        <p>Trello</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6 col-xs-6">
+                                <div class="service-details wow fadeIn" data-wow-delay=".2s">
+                                    <div class="service-hover1"></div>
+                                    <div class="media2 text-center">
+                                        <i class="icon-slack service-icon"></i>
+                                        <p>Slack</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================ CONTACTO =============================== -->
+
+        <div id="contact">
+            <div class="contact-content">
+                <div class="contact-grid">
+                    <div class="contact-form-details wow fadeIn">
+                        <div class="container">
+                            <div class="row contact-row">
+                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1  contact-col">
+                                    <div class="main-title contact-text text-center">
+                                        <h3>Contáctame</h3>
+                                        <div class="underline1"></div>
+                                        <div class="underline2"></div>
+                                        <p>Juntos podemos llegar a realizar buenos trabajos. </p>
+                                        <a class="about-contact1" href="#work">ver CV</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row contact-info-row text-center">
+                                <div class="col-md-3 col-sm-6 contact-colamn wow fadeIn">
+                                    <div class="contact-col-info" data-wow-delay=".2s">
+                                        <i class="fa fa-linkedin contact-icon" aria-hidden="true"></i>
+                                        <h3>Linkedin</h3>
+                                        <div class="underline1 white"></div>
+                                        <div class="underline2 white"></div>
+                                        <a href="https://www.linkedin.com/in/jessica-manturano/" target="_blank">jessica-manturano</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 contact-colamn wow fadeIn">
+                                    <div class="contact-col-info" data-wow-delay=".4s">
+                                        <i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
+                                        <h3>Email</h3>
+                                        <div class="underline1 white"></div>
+                                        <div class="underline2 white"></div>
+                                        <a href="mailto:jessica95.mp@gmail.com" target="_blank">jessica95.mp@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 contact-colamn wow fadeIn">
+                                    <div class="contact-col-info" data-wow-delay=".6s">
+                                        <i class="fa fa-mobile contact-icon" aria-hidden="true"></i>
+                                        <h3>Teléfono</h3>
+                                        <div class="underline1 white"></div>
+                                        <div class="underline2 white"></div>
+                                        <span>936584793</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 contact-colamn wow fadeIn">
+                                    <div class="contact-col-info" data-wow-delay=".6s">
+                                        <i class="fa fa-github contact-icon" aria-hidden="true"></i>
+                                        <h3>Github</h3>
+                                        <div class="underline1 white"></div>
+                                        <div class="underline2 white"></div>
+                                        <a href="https://github.com/JessicaMP" target="_blank">JessicaMP</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-details">
+                        <div class="about-social-icon text-center">
+                            <ul class="about-social">
+                                <li class="wow fadeIn" data-wow-delay=".8s">
+                                    <a href="https://www.linkedin.com/in/jessica-manturano/" target="_blank">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="wow fadeIn" data-wow-delay="1s">
+                                    <a href="https://github.com/JessicaMP" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            <h3>realizado por: Jessica Manturano</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="white absolute bottom text-center w100 border-footer pt-5 pb-3">
-      <p class="color-beige foo"> © 2018 Jessica Manturano Paucar</p>
-    </footer>
 
-  </section>
+    <!-- ================================ JQUERY =============================== -->
 
-  <!--  Boostrap-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <!-- Icon -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
-  <!--js-->
-  <script src="js/particles.min.js"></script>
-  <script src="js/configParticles.js"></script>
-  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-  <script src="js/app.js"></script>
+    <!-- ==========  PLUGIN ========== -->
+    <script src="js/jQuery-latest.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/ajax-jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/wow-anim.js"></script>
+    <script src="js/jquery.scrolly.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/animation.js"></script>
+
 </body>
 
 </html>

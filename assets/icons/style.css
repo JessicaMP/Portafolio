@@ -122,7 +122,7 @@
   color: #0052cc;
 }
 .icon-atom{
-  color: #66595c;
+  color: white;
 }
 .icon-atom:before {
   content: "\e919";
@@ -183,7 +183,7 @@
   color: #ff5722;
 }
 .icon-bootstrap {
-  color: #563d7c;
+  color: white;
 }
 .icon-bootstrap:before {
   content: "\e928";
@@ -228,7 +228,7 @@
   color: #ee4623;
 }
 .icon-codepen{
-  color: #1f8acb;
+  color: white;
 }
 .icon-codepen:before {
   content: "\e933";
@@ -266,7 +266,7 @@
   color: #2a73cc;
 }
 .icon-css3{
-  color: #1572b6;
+  color: white;
 }
 .icon-css3:before {
   content: "\e93c";
@@ -372,7 +372,7 @@
   color: #5ab552;
 }
 .icon-evernote {
-  color: #2dbe60;
+  color: white;
 }
 .icon-evernote:before {
   content: "\e957";
@@ -398,7 +398,7 @@
   color: #6cc655;
 }
 .icon-firebase {
-  color: #ffca28;
+  color: white;
 }
 .icon-firebase:before {
   content: "\e95d";
@@ -458,6 +458,9 @@
 .icon-git:before {
   content: "\e96b";
   color: #f14e32;
+}
+.icon-github {
+  color: white;
 }
 .icon-github:before {
   content: "\e96c";
@@ -555,7 +558,7 @@
 }
 .icon-gulp:before {
   content: "\e984";
-  color: #da4648;
+  color: white;
 }
 .icon-gumtree:before {
   content: "\e985";
@@ -603,7 +606,7 @@
   color: #7ac142;
 }
 .icon-html5 {
-  color: #e34f26;
+  color: white;
 }
 .icon-html5:before {
   content: "\e990";
@@ -655,7 +658,7 @@
   color: #f36;
 }
 .icon-javascript{
-  color: #f7df1e;
+  color: white;
 }
 .icon-javascript:before {
   content: "\e99d";
@@ -677,7 +680,7 @@
   color: #5091cd;
 }
 .icon-jquery {
-  color: #0769ad;
+  color: white;
 }
 .icon-jquery:before {
   content: "\e9a2";
@@ -756,9 +759,12 @@
   content: "\e9b5";
   color: #00c300;
 }
+.icon-linkedin {
+  color: white;
+}
+
 .icon-linkedin:before {
   content: "\e9b6";
-  color: #0077b5;
 }
 .icon-linux:before {
   content: "\e9b7";
@@ -932,7 +938,7 @@
   color: #e60012;
 }
 .icon-nodejs {
-  color: #393;
+  color: white;
 }
 .icon-nodejs:before {
   content: "\e9e3";
@@ -942,7 +948,7 @@
   color: #76d04b;
 }
 .icon-npm{
-  color: #cb3837;
+  color: white;
 }
 .icon-npm:before {
   content: "\e9e5";
@@ -1105,7 +1111,7 @@
   color: #c51a4a;
 }
 .icon-react {
-  color: #61dafb;
+  color: white;
 }
 .icon-react:before {
   content: "\ea0e";
@@ -1127,7 +1133,7 @@
   color: #d82c20;
 }
 .icon-redux {
-  color: #764abc;
+  color: white;
 }
 .icon-redux:before {
   content: "\ea13";
@@ -1160,7 +1166,7 @@
   color: #00a1e0;
 }
 .icon-sass {
-  color: #c69;
+  color: white;
 }
 .icon-sass:before {
   content: "\ea1b";
@@ -1220,8 +1226,8 @@
   content: "\ea29";
   color: #00aff0;
 }
-.icon-slac {
-  color: #56b68b;
+.icon-slack {
+  color: white;
 }
 .icon-slack:before {
   content: "\ea2a";
@@ -1290,7 +1296,7 @@
   color: #1e5397;
 }
 .icon-stackoverflow{
-  color: #fe7a16;
+  color: white;
 }
 .icon-stackoverflow:before {
   content: "\ea3b";
@@ -1412,7 +1418,7 @@
   color: #5fcf80;
 }
 .icon-trello {
-  color: #0079bf;
+  color: white;
 }
 .icon-trello:before {
   content: "\ea5b";
@@ -1504,7 +1510,7 @@
   color: #142787;
 }
 .icon-visualstudiocode {
-  color: #0271bc;
+  color: white;
 }
 .icon-visualstudiocode:before {
   content: "\ea72";
@@ -1521,7 +1527,7 @@
   color: #4fc08d;
 }
 .icon-webpack {
-  color: #8dd6f9;
+  color: white;
 }
 .icon-webpack:before {
   content: "\ea76";
